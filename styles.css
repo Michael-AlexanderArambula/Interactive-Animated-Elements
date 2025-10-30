@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  margin-top: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #2b2d42;
+}
+
+p {
+  margin: 1rem 0 2rem;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  border-radius: 50%;
+  margin: 0 auto 3rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  width: 220px;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.8s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  transform: rotate(5deg);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background-color: #2196F3;
+}
+
+.cta-btn {
+  background: #3498db;
+  color: #fff;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+  margin: 2rem auto;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #8e44ad;
+  transform: scale(1.08);
+}
+
+footer {
+  margin-top: auto;
+  padding: 1.5rem 0;
+  background: #2b2d42;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+}
